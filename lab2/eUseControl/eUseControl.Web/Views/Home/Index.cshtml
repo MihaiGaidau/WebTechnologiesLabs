@@ -1,0 +1,276 @@
+﻿@using System.Web.Optimization
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Home";
+}
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<body>
+
+    @*  <!-- Welcome Section -->*@
+    <section class="welcome-content">
+        <div class="container wrapper">
+            <div class="content-left">
+                <div class="welcome-text">
+                    <h1>Focus on what really matters, we take care of the rest</h1>
+                    <h3>Get it done by booking services on our website</h3>
+                </div>
+                <div class="row align-horizontaly">
+                    <button id="browse-services">Browse our sevices</button>
+                    <span>OR</span>
+                    <button id="become-provider">Become a service provider</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @*  <!-- Job Categories Section-->*@
+    <section class="categories-section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-block">
+                            <img src="../../Images/categories-icons/installation.svg" class="services-icon" alt="">
+                            <h3 class="card-title">Instalare</h3>
+                            <p class="card-text">
+                                Instalare rețele electrice.
+                                <br> Instalare rețele asigurare cu apă.
+                                <br> Instalare rețele canalizare.
+                                <br> Instalare tehnică de uz casnic.
+                                <br> Instalare sistemeleor de securitate.
+                                <br>
+                            </p>
+                            <a href="#" id="install" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-block">
+                            <img src="../../Images/categories-icons/repair.svg" class="services-icon" alt="">
+                            <h3 class="card-title">Reparație</h3>
+                            <p class="card-text">
+                                Instalare rețele electrice.
+                                <br> Instalare rețele asigurare cu apă.
+                                <br> Instalare rețele canalizare.
+                                <br> Instalare tehnică de uz casnic.
+                                <br> Instalare sistemeleor de securitate.
+                                <br>
+                            </p>
+                            <a href="#" id="repair" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-block">
+                            <img src="../../Images/categories-icons/improvement.svg" class="services-icon" alt="">
+                            <h3 class="card-title">Îmbunătățire</h3>
+                            <p class="card-text">
+                                Instalare rețele electrice.
+                                <br> Instalare rețele asigurare cu apă.
+                                <br> Instalare rețele canalizare.
+                                <br> Instalare tehnică de uz casnic.
+                                <br> Instalare sistemeleor de securitate.
+                                <br>
+                            </p>
+                            <a href="#" id="improve" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-block">
+                            <img src="../../Images/categories-icons/delivery.svg" class="services-icon" alt="">
+                            <h3 class="card-title">Livrare</h3>
+                            <p class="card-text">
+                                Instalare rețele electrice.
+                                <br> Instalare rețele asigurare cu apă.
+                                <br> Instalare rețele canalizare.
+                                <br> Instalare tehnică de uz casnic.
+                                <br> Instalare sistemeleor de securitate.
+                                <br>
+                            </p>
+                            <a href="#" id="deliver" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-block">
+                            <img src="../../Images/categories-icons/transport.svg" class="services-icon" alt="">
+                            <h3 class="card-title">Transport</h3>
+                            <p class="card-text">
+                                Instalare rețele electrice.
+                                <br> Instalare rețele asigurare cu apă.
+                                <br> Instalare rețele canalizare.
+                                <br> Instalare tehnică de uz casnic.
+                                <br> Instalare sistemeleor de securitate.
+                                <br>
+                            </p>
+                            <a href="#" id="transport" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-block">
+                            <img src="../../Images/categories-icons/cleaning.svg" class="services-icon" alt="">
+                            <h3 class="card-title">Curățenie</h3>
+                            <p class="card-text">
+                                Instalare rețele electrice.
+                                <br> Instalare rețele asigurare cu apă.
+                                <br> Instalare rețele canalizare.
+                                <br> Instalare tehnică de uz casnic.
+                                <br> Instalare sistemeleor de securitate.
+                                <br>
+                            </p>
+                            <a href="#" id="clean" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <a href="@Url.Action("Index","Categories")" id="all-categories" class="btn btn-primary">See all categories</a>
+        </div>
+    </section>
+    @*  <!-- How It Works Section-->*@
+    <section class="how-it-works">
+        <div class="container">
+            <h1 class="text-center header-text">How it works</h1>
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-block">
+                            <img src="../../Images/steps-icons/find.svg" class="steps-icon" alt="">
+                            <hr>
+                            <h3 class="card-title">FIND</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, assumenda! Odit aliquam nisi necessitatibus amet quaerat,
+                                est, reiciendis exercitationem. Reprehenderit architecto obcaecati dolor suscipit quod!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-block">
+                            <img src="../../Images/steps-icons/hire.svg" class="steps-icon" alt="">
+                            <hr>
+                            <h3 class="card-title">HIRE</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, assumenda! Odit aliquam nisi necessitatibus amet quaerat,
+                                est, reiciendis exercitationem. Reprehenderit architecto obcaecati dolor suscipit quod!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-block">
+                            <img src="../../Images/steps-icons/work.svg" class="steps-icon" alt="">
+                            <hr>
+                            <h3 class="card-title">WORK</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, assumenda! Odit aliquam nisi necessitatibus amet quaerat,
+                                est, reiciendis exercitationem. Reprehenderit architecto obcaecati dolor suscipit quod!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-block">
+                            <img src="../../Images/steps-icons/pay.svg" class="steps-icon" alt="">
+                            <hr>
+                            <h3 class="card-title">PAY</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, assumenda! Odit aliquam nisi necessitatibus amet quaerat,
+                                est, reiciendis exercitationem. Reprehenderit architecto obcaecati dolor suscipit quod!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    @*  <!-- Testimonials Section -->*@
+    <section class="slider">
+        <h1 class="text-center slider-title">
+            Why People
+            <i class="fa fa-heart" aria-hidden="true"></i> Us
+        </h1>
+        <h5 class="text-center slider-subtitle mt-3">Don't just take it from us, see why people love using JobMarket. Tweet us a testimonial!</h5>
+        <div class="container">
+            <div id="carouselContent" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselContent" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselContent" data-slide-to="1"></li>
+                    <li data-target="#carouselContent" data-slide-to="2"></li>
+                </ol>
+                <div class="quote text-center">
+                    <i class="fa fa-quote-left fa-3x"></i>
+                </div>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active text-center p-4">
+                        <img src="../../Images/authors/emp3.jpg" alt="">
+                        <h4>George</h4>
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error repudiandae fuga dolorum nihil quos reprehenderit
+                            magnam nostrum rerum ducimus deserunt voluptatem dolores, fugit nemo quod est doloribus incidunt ex neque necessitatibus,
+                            ratione velit porro optio, consequatur? Ab reiciendis distinctio accusamus vitae quasi est molestias, quidem
+                            a fuga temporibus, minus asperiores!"
+                        </p>
+                    </div>
+                    <div class="carousel-item text-center p-4">
+                        <img src="../../Images/authors/emp3.png" alt="">
+                        <h4>Adam</h4>
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nulla esse perspiciatis, eveniet officiis quia autem
+                            repudiandae molestias corrupti magni obcaecati quo mollitia, similique sit!"
+                        </p>
+                    </div>
+                    <div class="carousel-item text-center p-4">
+                        <img src="../../Images/authors/emp4.jpg" alt="">
+                        <h4>Sarah</h4>
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, eligendi. Voluptatibus non fugiat cumque
+                            officia, quaerat soluta! Illum fugit dolores eos ducimus eveniet saepe quisquam."
+                        </p>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

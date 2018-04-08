@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "_NavBar";
+}
+
+
+<header>
+
+    @*    <!-- Top Bar -->*@
+    <div class="top-nav">
+        <div class="container align-vertically">
+            <div id="user" class="block">
+                Welcome,
+                <a href="@Url.Action("Index","Profile")">Mihai Gaidau!</a>
+            </div>
+            <div class="log-sign block align-right">
+                <a href="@Url.Action("Index","Login")">Login</a> or
+                <a href="@Url.Action("Index","Register")">Create an account</a>
+            </div>
+        </div>
+    </div>
+
+    @*            <!-- Navigation Bar -->*@
+    <nav>
+        <div class="container align-vertically">
+            <div class="block" id="logo">
+                <a href="@Url.Action("Index","Profile")">JobMarket</a>
+            </div>
+            <div class="navigation block align-right">
+                <a href="@Url.Action("Index","Home")">home</a>
+                <a href="">services</a>
+                <a href="">how it works</a>
+                <a href="">why us</a>
+                <a href="">blog</a>
+                <a href="">contact us</a>
+                <i class="fa fa-bars" id="menu-bar" aria-hidden="true"></i>
+            </div>
+        </div>
+    </nav>
+
+    @*    <!-- Hidden Menu -->*@
+    <div id="hidden-menu">
+        <div>
+            <a href="@Url.Action("Index","Home")">home</a>
+        </div>
+        <div>
+            <a href="">services</a>
+        </div>
+        <div>
+            <a href="">how it works</a>
+        </div>
+        <div>
+            <a href="">why us</a>
+        </div>
+        <div>
+            <a href="">blog</a>
+        </div>
+        <div>
+            <a href="">contact us</a>
+        </div>
+    </div>
+
+</header>
