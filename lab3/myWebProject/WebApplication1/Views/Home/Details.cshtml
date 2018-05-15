@@ -1,0 +1,15 @@
+﻿@model WebApplication1.Models.Restaurant
+
+
+
+@if (Model == null)
+{
+<div>Not found</div>
+}
+else
+{
+    <h1>@Model.Name</h1>
+    <div>Id: @Model.Id</div>
+    <div>Cousine: @Model.Cuisine</div>
+    <a asp-action="Index" asp-controller ="Home">Home</a>
+}
