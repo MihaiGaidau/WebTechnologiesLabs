@@ -12,7 +12,7 @@ namespace WebApplication1.Pages.Restaurants
     public class EditModel : PageModel
     {
         private IRestaurantData _restaurantData;
-
+        [BindProperty]
         public Restaurant Restaurant { get; set; }
         public EditModel(IRestaurantData restaurantData)
         {
@@ -24,6 +24,17 @@ namespace WebApplication1.Pages.Restaurants
             if (Restaurant == null)
             {
                 return RedirectToAction("Index", "Home");
+            }
+
+            return Page();
+        }
+
+        public IActionResult OnPost()
+        {
+            if (ModelState.IsValid)
+            {
+                _restaurantData.Update(Restaurant);
+                return RedirectToAction("Details", "Home", new {id = Restaurant.Id});
             }
 
             return Page();

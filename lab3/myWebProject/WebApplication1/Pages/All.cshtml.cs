@@ -12,7 +12,7 @@ namespace WebApplication1.Pages
     public class AllModel : PageModel
     {
         private IRestaurantData _restaurants;
-        public static IEnumerable<Restaurant> Restaurants { get; set; }
+        public IEnumerable<Restaurant> Restaurants { get; set; }
 
         public AllModel(IRestaurantData restaurants)
         {

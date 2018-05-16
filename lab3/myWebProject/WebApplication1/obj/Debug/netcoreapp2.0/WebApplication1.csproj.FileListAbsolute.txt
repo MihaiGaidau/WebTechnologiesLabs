@@ -9,3 +9,14 @@ C:\Users\Home\Documents\Visual Studio 2017\Projects\myWebProject\WebApplication1
 C:\Users\Home\Documents\Visual Studio 2017\Projects\myWebProject\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.AssemblyInfo.cs
 C:\Users\Home\Documents\Visual Studio 2017\Projects\myWebProject\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.dll
 C:\Users\Home\Documents\Visual Studio 2017\Projects\myWebProject\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.pdb
+D:\Web\lab3\myWebProject\WebApplication1\bin\Debug\netcoreapp2.0\WebApplication1.deps.json
+D:\Web\lab3\myWebProject\WebApplication1\bin\Debug\netcoreapp2.0\WebApplication1.runtimeconfig.json
+D:\Web\lab3\myWebProject\WebApplication1\bin\Debug\netcoreapp2.0\WebApplication1.runtimeconfig.dev.json
+D:\Web\lab3\myWebProject\WebApplication1\bin\Debug\netcoreapp2.0\WebApplication1.dll
+D:\Web\lab3\myWebProject\WebApplication1\bin\Debug\netcoreapp2.0\WebApplication1.pdb
+D:\Web\lab3\myWebProject\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.csprojAssemblyReference.cache
+D:\Web\lab3\myWebProject\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.csproj.CoreCompileInputs.cache
+D:\Web\lab3\myWebProject\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.AssemblyInfoInputs.cache
+D:\Web\lab3\myWebProject\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.AssemblyInfo.cs
+D:\Web\lab3\myWebProject\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.dll
+D:\Web\lab3\myWebProject\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.pdb
