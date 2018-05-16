@@ -1,5 +1,8 @@
-﻿@model WebApplication1.Models.Restaurant
+﻿@model Restaurant
 
+@{
+    ViewBag.Title = @Model.Name;
+}
 
 
 @if (Model == null)
