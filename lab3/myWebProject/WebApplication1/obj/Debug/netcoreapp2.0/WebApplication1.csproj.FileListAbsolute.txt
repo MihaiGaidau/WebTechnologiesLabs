@@ -20,3 +20,14 @@ D:\Web\lab3\myWebProject\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1
 D:\Web\lab3\myWebProject\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.AssemblyInfo.cs
 D:\Web\lab3\myWebProject\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.dll
 D:\Web\lab3\myWebProject\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.pdb
+E:\UTM\UTM II\sem II\WEB\WW\lab3\myWebProject\WebApplication1\bin\Debug\netcoreapp2.0\WebApplication1.deps.json
+E:\UTM\UTM II\sem II\WEB\WW\lab3\myWebProject\WebApplication1\bin\Debug\netcoreapp2.0\WebApplication1.runtimeconfig.json
+E:\UTM\UTM II\sem II\WEB\WW\lab3\myWebProject\WebApplication1\bin\Debug\netcoreapp2.0\WebApplication1.runtimeconfig.dev.json
+E:\UTM\UTM II\sem II\WEB\WW\lab3\myWebProject\WebApplication1\bin\Debug\netcoreapp2.0\WebApplication1.dll
+E:\UTM\UTM II\sem II\WEB\WW\lab3\myWebProject\WebApplication1\bin\Debug\netcoreapp2.0\WebApplication1.pdb
+E:\UTM\UTM II\sem II\WEB\WW\lab3\myWebProject\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.csprojResolveAssemblyReference.cache
+E:\UTM\UTM II\sem II\WEB\WW\lab3\myWebProject\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.csproj.CoreCompileInputs.cache
+E:\UTM\UTM II\sem II\WEB\WW\lab3\myWebProject\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.AssemblyInfoInputs.cache
+E:\UTM\UTM II\sem II\WEB\WW\lab3\myWebProject\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.AssemblyInfo.cs
+E:\UTM\UTM II\sem II\WEB\WW\lab3\myWebProject\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.dll
+E:\UTM\UTM II\sem II\WEB\WW\lab3\myWebProject\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.pdb

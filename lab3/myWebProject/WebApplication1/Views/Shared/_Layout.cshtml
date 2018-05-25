@@ -12,6 +12,17 @@
 <footer>
     @RenderSection("footer",required:false)
     <vc:greeter></vc:greeter>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <form method="post" asp-controller="Auth" asp-action="SignOut">
+            <button type="submit" class="btn btn-primary">Sign Out</button>
+        </form>
+    }
+    else
+    {
+        <a asp-controller="Auth" asp-action="SignIn">Log in</a>
+        <a class="btn btn-lg btn-success" asp-controller="Auth" asp-action="SignUp">Sign Up</a>
+    }
    @* @await Component.InvokeAsync("Greeter")*@
 </footer>
 </body>

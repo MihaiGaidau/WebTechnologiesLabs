@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -33,6 +34,14 @@ namespace WebApplication1
             services.AddDbContext<WebApplication1DbContext>(options => options.UseSqlServer(_configuration.GetConnectionString("WebApplication1")));
             services.AddScoped<IRestaurantData, SqlRestaurantData>();
             services.AddMvc();
+            var users = new Dictionary<string, string> {{"Chris", "password"}};
+            services.AddSingleton<IUserService>(new UserService(users));
+            services.AddAuthentication(options =>
+                {
+                    options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                    options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                    options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                }).AddCookie(options => { options.LoginPath = "/auth/signin"; });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -67,6 +76,7 @@ namespace WebApplication1
             app.UseRewriter(new RewriteOptions().AddRedirectToHttpsPermanent());
             app.UseStaticFiles();
            // app.UseMvcWithDefaultRoute();
+            app.UseAuthentication();
             app.UseMvc(ConfigureRoutes);
             app.Run(async (context) =>
             {
