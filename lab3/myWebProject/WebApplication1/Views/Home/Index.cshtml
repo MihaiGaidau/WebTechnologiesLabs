@@ -4,11 +4,17 @@
     //    Layout = null;
 }
 <h1>All restaurants</h1>
-@foreach (var restaurant in Model.Restaurants)
+@if (User.Identity.IsAuthenticated)
 {
-    @Html.Partial("_Summary", restaurant)
+    foreach (var restaurant in Model.Restaurants)
+     {
+         @Html.Partial("_Summary", restaurant)
+     }
+
+    <div><a asp-action="Create">Add restaurant</a></div>
+
 }
-
-<div><a asp-action="Create">Add restaurant</a></div>
-
-
+else
+{
+    <h2>Log in to see more</h2>
+}

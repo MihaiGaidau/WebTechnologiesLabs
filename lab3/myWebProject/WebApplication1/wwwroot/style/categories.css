@@ -1,0 +1,89 @@
+/*********Search Jobs Section**********/
+
+/*****************************************/
+
+.search-box {
+  font-family: 'Montserrat', sans-serif;
+  color: #555555;
+  text-align: center;
+  position: relative;
+  height: 300px;
+  background-color: #FAFAFC;
+}
+
+.center-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 500px;
+}
+
+.search-box .input-group-addon {
+  background-color: #ffffff;
+  border: 0;
+}
+
+.search-box .input-group {
+  border: 2px solid rgb(200, 200, 200);
+  border-radius: 5px;
+}
+
+.search-box input {
+  border: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/*********Jobs Category Section**********/
+
+/*****************************************/
+
+.category-section {
+  padding-top: 50px;
+}
+
+.category-section .row {
+  margin-bottom: 50px;
+}
+
+.category-section:last-of-type {
+  margin-bottom: 100px;
+}
+
+.category-section hr {
+  border: none;
+  height: 3px;
+  border-radius: 10px;
+  color: #FAFAFC;
+  /* old IE */
+  background-color: #FAFAFC;
+  /* Modern Browsers */
+}
+
+.category-section h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #522F91;
+}
+
+.category-section ul {
+  padding: 0;
+  margin: 0;
+}
+
+.category-section ul li a {
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  color: #666666;
+  font-weight: 700;
+  font-size: 20px;
+  transition: margin-left ease-in-out .1s;
+}
+
+.category-section ul li a:hover {
+  color: #000;
+  margin-left: 3px;
+}

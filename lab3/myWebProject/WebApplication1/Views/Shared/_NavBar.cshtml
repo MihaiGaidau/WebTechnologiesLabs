@@ -1,0 +1,88 @@
+﻿@{
+    ViewData["Title"] = "_NavBar";
+}
+
+@{
+    ViewBag.Title = "_NavBar";
+}
+
+
+<header>
+
+    @*    <!-- Top Bar -->*@
+    <div class="top-nav">
+        <div class="container align-vertically">
+            @if (User.Identity.IsAuthenticated)
+            {
+        <div id="user" class="block">
+            Welcome,
+            <a href="@Url.Action("Index", "Home")">@User.Identity.Name!</a>
+        </div>
+            }
+            else
+            {
+        <div id="user" class="block">
+            Welcome
+        </div>
+
+            }
+            <div class="log-sign block align-right">
+                @if (User.Identity.IsAuthenticated)
+            {
+        <a asp-controller="Auth" asp-action="SignOut">SignOut</a>
+            }
+            else
+            {
+        <a asp-controller="Auth" asp-action="SignIn">Login</a>
+        <a asp-controller="Auth" asp-action="SignUp">Create an account</a>
+            }
+            </div>
+            @*                <div class="log-sign block align-right">*@
+            @**@
+            @*                    <a asp-controller="Auth" asp-action="SignIn">Login</a> or*@
+            @*                    <a asp-controller="Auth" asp-action="SignUp">Create an account</a>*@
+            @*                </div>*@
+        </div>
+    </div>
+
+    @*            <!-- Navigation Bar -->*@
+    <nav>
+        <div class="container align-vertically">
+            <div class="block" id="logo">
+                <a href="@Url.Action("Index","Home")">JobMarket</a>
+            </div>
+            <div class="navigation block align-right">
+                <a href="@Url.Action("Index","Home")">home</a>
+                <a href="">services</a>
+                <a href="">how it works</a>
+                <a href="">why us</a>
+                <a href="">blog</a>
+                <a href="">contact us</a>
+                <i class="fa fa-bars" id="menu-bar" aria-hidden="true"></i>
+            </div>
+        </div>
+    </nav>
+
+    @*    <!-- Hidden Menu -->*@
+    <div id="hidden-menu">
+        <div>
+            <a href="@Url.Action("Index","Home")">home</a>
+        </div>
+        <div>
+            <a href="">services</a>
+        </div>
+        <div>
+            <a href="">how it works</a>
+        </div>
+        <div>
+            <a href="">why us</a>
+        </div>
+        <div>
+            <a href="">blog</a>
+        </div>
+        <div>
+            <a href="">contact us</a>
+        </div>
+    </div>
+
+</header>

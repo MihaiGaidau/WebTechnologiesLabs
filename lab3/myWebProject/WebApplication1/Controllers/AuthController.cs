@@ -40,7 +40,7 @@ namespace WebApplication1.Controllers
                 }
             }
 
-            return View(model);
+            return RedirectToAction("Index", "Home");
         }
 
         private async Task SignInUser(string username)
@@ -56,7 +56,7 @@ namespace WebApplication1.Controllers
         }
 
         [Route("signout")]
-        [HttpPost]
+//        [HttpPost]
         public async Task<IActionResult> SignOut()
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
@@ -84,7 +84,7 @@ namespace WebApplication1.Controllers
                 ModelState.AddModelError("Error", "Could not add user, Username already in use...");
             }
 
-            return View(model);
+            return RedirectToAction("Index", "Home");
         }
     }
 }
