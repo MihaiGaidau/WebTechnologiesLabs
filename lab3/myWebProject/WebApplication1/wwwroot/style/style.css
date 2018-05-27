@@ -259,7 +259,7 @@ div.navigation a:hover:after {
 .welcome-content {
   position: relative;
   height: 800px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Images/background-images/image.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Images/background-images/RestBack.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

@@ -1,16 +1,36 @@
 ﻿@model SignUpModel
 
+@section AddToHead
+{
+    <link rel="stylesheet" href="style/reg-log-forms.css">
+}
 @if (!ViewContext.ModelState.IsValid)
 {
     <div asp-validation-summary="All" class="form-validation"></div>
 }
-    <form class="form-signin" asp-action="SignUp">
-        <h2>Please register</h2>
-        <label class="sr-only">Username</label>
-        <input type="text" class="form-control" placeholder="Username" asp-for="Username" />
-        <label class="sr-only">Password</label>
-        <input type="password" class="form-control" placeholder="Password" asp-for="Password" />
-        <label class="sr-only">Repeat password</label>
-        <input type="password" class="form-control" placeholder="Password" asp-for="RepeatPassword" />
-        <button class="btn btn-lg btn-block btn-primary" type="submit">Register</button>
-    </form>
+<section class="form-section">
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form class="form-signin" asp-action="SignUp">
+                <div class="form-group">
+                    <label class="sr-only">Username</label>
+                    <input type="text" class="form-control" placeholder="Username" asp-for="Username" />
+                </div>
+           
+            <div class="form-group">
+                <label class="sr-only">Password</label>
+                <input type="password" class="form-control" placeholder="Password" asp-for="Password" />
+            </div>
+            <div class="form-group">
+                <label class="sr-only">Repeat password</label>
+                <input type="password" class="form-control" placeholder="Password" asp-for="RepeatPassword" />
+            </div>
+            <label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+                <input type="checkbox" class="custom-control-input" required>
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">I agree to the Terms and Conditions</span>
+            </label>
+            <input type="submit" class="btn btn-primary" value="REGISTER">
+        </form>
+    </div>
+</section>
